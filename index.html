@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Fruit Brust</title>
 </head>
+
 <body>
-    <h1>Fruit Brust</h1>
+
+    <section class="container mx-auto flex justify-between">
+        <!-- left side -->
+        <div>
+            <h1 class="text-[#121212] text-5xl font-extrabold">Deal of the day</h1>
+            <p class="text-[#12121299] text-base">Contrary to popular belief, is not simply random text. It has roots in
+                a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+
+        <!-- count down -->
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                </span>
+                days
+            </div>
+            <span class="material-symbols-sharp mt-3">
+                more_vert
+            </span>
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                </span>
+                hours
+            </div>
+            <span class="material-symbols-sharp mt-3">
+                more_vert
+            </span>
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                </span>
+                min
+            </div>
+            <span class="material-symbols-sharp mt-3">
+                more_vert
+            </span>
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:46;"></span>
+                </span>
+                sec
+            </div>
+        </div>
+    </section>
+
+
+    <!-- fruits cards section -->
+    <section class="container mx-auto">
+        <div class="text-center flex flex-col justify-center items-center">
+            <img src="./images/fruit6.png" alt="fruit6">
+            <h1 class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</h1>
+            <hr>
+            <p>Apples</p>
+            <!-- rating -->
+            <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked/>
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            </div>
+            <div>
+                <button class="text-[#F85559] hover:underline font-bold text-lg">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>

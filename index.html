@@ -200,15 +200,15 @@
     <section class="container mx-auto flex lg:flex-row lg:justify-between flex-col items-center">
         <!-- left side -->
         <div class="text-center lg:text-left">
-            <h1 class="text-[#121212] text-5xl font-extrabold mt-3">Deal of the day</h1>
-            <p class="text-[#12121299] text-base w-96 lg:w-4/5 mt-3">Contrary to popular belief, is not simply random text. It has roots in
+            <h1 class="text-[#121212] text-2xl lg:text-7xl font-extrabold mt-3">Deal of the day</h1>
+            <p class="text-[#12121299] text-sm lg:text-base lg:w-4/5 mt-3">Contrary to popular belief, is not simply random text. It has roots in
                 a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
         <!-- count down -->
-        <div class="grid grid-flow-col gap-5 text-center auto-cols-max  mt-3">
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max mt-3">
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono text-2xl lg:text-5xl">
                     <span style="--value:15;"></span>
                 </span>
                 days
@@ -217,7 +217,7 @@
                 more_vert
             </span>
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono text-2xl lg:text-5xl">
                     <span style="--value:10;"></span>
                 </span>
                 hours
@@ -226,7 +226,7 @@
                 more_vert
             </span>
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono text-2xl lg:text-5xl">
                     <span style="--value:24;"></span>
                 </span>
                 min
@@ -235,7 +235,7 @@
                 more_vert
             </span>
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono text-2xl lg:text-5xl">
                     <span style="--value:46;"></span>
                 </span>
                 sec
@@ -875,7 +875,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="./images/whychoose1.png" alt="">
+                <img class="w-[300px] lg:w-max" src="./images/whychoose1.png" alt="">
             </div>
             <div>
                 <div class="flex flex-col gap-10 justify-center items-center pt-5 lg:mt-0">
@@ -981,22 +981,24 @@
     
 
     <!-- Footer Section -->
-    <footer class="footer footer-center p-20 mt-16 bg-[#121212] text-primary-content">
+    <footer class="footer footer-center py-20 mt-16 bg-[#121212] text-primary-content">
+
         <div class="navbar-center flex gap-3 text-white">
-            <img src="./images/logo.png" alt="logo">
-            <h1 class="normal-case text-[40px]">Fruit Burst</h1>
+            <img class="w-9" src="./images/logo.png" alt="logo">
+            <h1 class="normal-case text-2xl lg:text-[40px]">Fruit Burst</h1>
         </div>
-        <div class="flex flex-wrap gap-12 justify-center">
-            <a class="link link-hover">Home</a> 
-            <a class="link link-hover">About us</a> 
-            <a class="link link-hover">Shop</a> 
-            <a class="link link-hover">All Fruits</a>
-            <a class="link link-hover">Support</a>
-            <a class="link link-hover">My Account</a>
+
+        <div class="flex flex-wrap gap-5 lg:gap-12 justify-center">
+            <a class="link text-[14px] lg:text-base link-hover">Home</a> 
+            <a class="link text-[14px] lg:text-base link-hover">About us</a> 
+            <a class="link text-[14px] lg:text-base link-hover">Shop</a> 
+            <a class="link text-[14px] lg:text-base link-hover">All Fruits</a>
+            <a class="link text-[14px] lg:text-base link-hover">Support</a>
+            <a class="link text-[14px] lg:text-base link-hover">My Account</a>
         </div> 
 
-        <div>
-          <div class="grid grid-flow-col gap-10">
+        <div class="mb-10">
+          <div class="grid grid-flow-col lg:gap-10 gap-5">
             <a><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
                 <g clip-path="url(#clip0_13_3499)">
                   <path d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z" fill="white"/>
@@ -1052,6 +1054,7 @@
               </svg></a>
           </div>
         </div>
+
       </footer>
     
 
